@@ -30,7 +30,7 @@ R1: <s>Calculate tax on employment income as 20% of the total income.</s>
 
 R2: <s>An allowance of £1000 is applied on all interest from savings. Calculate tax on all other interest earnings at a rate of 15%.</s>
 
-R3: Tax on employment bonuses is calculated depending on the level of income, with a 20% rate on bonuses for all income lower than £25k, 40% for all income in (£25k, 50k), and 45% for all income higher than £50k. Calculate the tax on employment bonuses.
+R3: <s>Tax on employment bonuses is calculated depending on the level of income, with a 20% rate on bonuses for all income lower than £25k, 40% for all income in (£25k, 50k), and 45% for all income higher than £50k. Calculate the tax on employment bonuses.<s/>
 
 
 #### Implementation
