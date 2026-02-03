@@ -35,9 +35,9 @@ R3: Tax on employment bonuses is calculated depending on the level of income, wi
 
 #### Implementation
 
-> 1. Fork the repository TaxCalculator. You will use this as a template for building the app.
+1. Fork the repository TaxCalculator. You will use this as a template for building the app.
 
-> 2. Open the TaxCalculator in Visual Studio Code. These files should be included:
+2. Open the TaxCalculator in Visual Studio Code. These files should be included:
 
 > index.html - frontend, incorporating the html, css, and js components
 
@@ -45,13 +45,13 @@ R3: Tax on employment bonuses is calculated depending on the level of income, wi
 
 > requirements.txt - config file used for installing flask
 
-> 3. Install Flask.
+3. Install Flask.
 
 > On Mac: pip3 install –r requirements
 
 > On Windows: pip install –r requirements.txt
 
-> 4. Run the app.
+4. Run the app.
 
 > On Mac: python3 app.py
 
@@ -59,24 +59,24 @@ R3: Tax on employment bonuses is calculated depending on the level of income, wi
 
 > In a separate browser, load the URL the app is running on. This is usually htttp://127.0.0.1:5000
 
-> 5. The app is currently implementing R1 and R2. Please implement R3.
+5. The app is currently implementing R1 and R2. Please implement R3.
 
 > Make sure you:
 
-> q Allow the users to input a third type of income, bonusIncome
+> Allow the users to input a third type of income, bonusIncome
 
-> q Create a space on the template page where you will display the result, taxOnBonus
+> Create a space on the template page where you will display the result, taxOnBonus
 
-> q Extract the dom fragment including the bonusIncome and its respective result
+> Extract the dom fragment including the bonusIncome and its respective result
 
-> q Extract the value of the bonusIncome from the dom fragment
+> Extract the value of the bonusIncome from the dom fragment
 
-> q Post the bonusIncome together with your api request
+> Post the bonusIncome together with your api request
 
-> q Change the python method to also check the validity of the bonusIncome and calculate taxOnBonus
+> Change the python method to also check the validity of the bonusIncome and calculate taxOnBonus
 
-> q Wrap the taxOnBonus (and the corresponding errors) into json objects and return them
+> Wrap the taxOnBonus (and the corresponding errors) into json objects and return them
 
-> q Unpack the json objects on the JS side
+> Unpack the json objects on the JS side
 
-> q Display the taxOnBonus in the GUI
+> Display the taxOnBonus in the GUI
