@@ -27,9 +27,26 @@ def calcTax():
       return jsonify({"error2": "Please provide positive income"}), 400
   
     if b < 1000:
-      return jsonify({"taxIncome": 20/100*a, "taxSavings": 0}), 200
+      taxSavings = 0
+    else:
+      taxSavings = 15/100*(b-1000)
+
+    # Calculate tax on bonus
+    c = 0
+    if "c" in data:
+      c = float(data["c"])
+      if c < 0:
+        return jsonify({"error2": "Please provide positive income"}), 400
     
-    return jsonify({"taxIncome": 20/100*a, "taxSavings": 15/100*(b-1000)}), 200
+    taxBonus = 0
+    if a < 25000:
+      taxBonus = 20/100 * c
+    elif a <= 50000:
+      taxBonus = 40/100 * c
+    else:
+      taxBonus = 45/100 * c
+
+    return jsonify({"taxIncome": 20/100*a, "taxSavings": taxSavings, "taxBonus": taxBonus}), 200
     
   except (ValueError, TypeError):
     return jsonify({"error4": "Both incomes must be numerical"}), 400
